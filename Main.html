@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TresJolie - Indulge in Luxury</title>
+  <meta name="description" content="TresJolie offers handcrafted luxury chocolates and elegant gift arrangements made with artistry and love." />
+  <meta property="og:title" content="TresJolie - Indulge in Luxury" />
+  <meta property="og:description" content="Experience the finest handcrafted chocolate creations." />
+  <meta property="og:image" content="./Photos/preview.png" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+
+  <a href="https://wa.me/+96171531657" target="_blank" class="whatsapp-chat-button" aria-label="Chat on WhatsApp">
+    <img src="./Photos/Untitled (1).png" alt="Chat with us on WhatsApp" loading="lazy" />
+  </a>
+
+  <header>
+    <div class="logo">TresJolie</div>
+    <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+    <nav>
+      <a href="#home" class="nav-link active" aria-label="Go to Home">Home</a>
+      <a href="#about" class="nav-link" aria-label="Go to About">About</a>
+      <a href="#products" class="nav-link" aria-label="Go to Products">Products</a>
+      <a href="#contact" class="nav-link" aria-label="Go to Contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="./Photos/chocolate.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-inner">
+      <div class="hero-content">
+        <h1 data-aos="fade-down">Indulge in luxury</h1>
+        <p data-aos="fade-up">Experience the finest chocolate creations</p>
+        <button onclick="scrollToSection('products')" data-aos="zoom-in">View Products</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="quote-banner" data-aos="fade-up">
+    <blockquote>
+      “Chocolate is not just a treat. It’s an expression of love, artistry, and indulgence.”
+      <span>— TresJolie Philosophy</span>
+    </blockquote>
+  </section>
+
+  <section class="section section-dark" id="about">
+    <div class="split">
+      <img src="./Photos/2nd.png" alt="Chef preparing chocolate" data-aos="fade-right" loading="lazy">
+      <div class="text" data-aos="fade-left">
+        <h2>Indulge in luxury</h2>
+        <p>At TresJolie, we redefine indulgence with our luxurious, handcrafted chocolates made from the finest ingredients. Blending tradition with creativity, we carefully craft every bite to deliver an elegant and unforgettable chocolate experience.</p>
+        <button onclick="scrollToSection('products')">Get to know us</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section products" id="products">
+    <h2 data-aos="fade-up">Indulge in elegance</h2>
+    <p data-aos="fade-up">Discover our exquisite handcrafted chocolates</p>
+    <div class="card-grid">
+      <div class="card" data-aos="zoom-in">
+        <img src="./Photos/3rd.png" alt="Artisanal Painted Chocolate" loading="lazy">
+        <div class="card-content">
+          <h3>Artisanal Painted Chocolate</h3>
+          <p>Handcrafted with precision and passion, each bonbon is a swirl of rich chocolate and vibrant cocoa butter art.</p>
+        </div>
+      </div>
+      <div class="card" data-aos="zoom-in" data-aos-delay="100">
+        <img src="./Photos/4th.png" alt="Velvet White Heart" loading="lazy">
+        <div class="card-content">
+          <h3>Velvet White Heart</h3>
+          <p>A delicate heart-shaped truffle, coated in a fine sugar-dusted shell, filled with creamy white chocolate ganache.</p>
+        </div>
+      </div>
+      <div class="card" data-aos="zoom-in" data-aos-delay="200">
+        <img src="./Photos/5th.png" alt="Assorted Gift Boxes" loading="lazy">
+        <div class="card-content">
+          <h3>Assorted Gift Boxes</h3>
+          <p>A luxurious blend of our most beloved handcrafted creations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section chocolate-bouquet" id="bouquet">
+    <div class="split">
+      <img src="./Photos/6th.png" alt="Chocolate flower bouquet" class="animated-float" loading="lazy">
+      <div class="text">
+        <h2>Edible Elegance</h2>
+        <p>Introducing our signature Chocolate Flower Bouquet — a captivating blend of floral artistry and fine chocolate. Each bloom is delicately hand-crafted to resemble roses and blossoms, perfect for luxury gifting, weddings, or romantic surprises.</p>
+        <button onclick="scrollToSection('contact')">Order Yours</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section instagram-feed" id="social">
+    <h2>From Our Kitchen to Your Heart</h2>
+    <div class="instagram-widget">
+      <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+      <iframe src="//lightwidget.com/widgets/1ebf4c8dd65e52388df6ec3eb1323f24.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+    </div>
+  </section>
+
+  <section class="section order-now" id="order">
+    <h2>Order Now</h2>
+    <form id="orderForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+  
+      <label for="product">Product:</label>
+<input type="text" id="product" name="product" placeholder="Enter product name" required />
+
+  
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" name="quantity" min="1" required />
+  
+      <label for="notes">Notes:</label>
+      <textarea id="notes" name="notes" placeholder="Any special requests?"></textarea>
+  
+      <button type="submit">Send Order via WhatsApp</button>
+    </form>
+  </section>
+
+  <script>
+    document.getElementById('orderForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+  
+      // Replace with your WhatsApp number in international format without '+' or dashes
+      const phoneNumber = '96171531657';
+  
+      const name = document.getElementById('name').value.trim();
+      const product = document.getElementById('product').value;
+      const quantity = document.getElementById('quantity').value;
+      const notes = document.getElementById('notes').value.trim();
+  
+      const message = `Hello, I would like to place an order:\n\nName: ${name}\nProduct: ${product}\nQuantity: ${quantity}\nNotes: ${notes}`;
+  
+      const encodedMessage = encodeURIComponent(message);
+      const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+  
+      window.open(whatsappURL, '_blank');
+    });
+  </script>
+  
+  
+
+  <footer id="contact" data-aos="fade-up">
+    <p>&copy; 2025 TresJolie. Crafted with elegance and indulgence.</p>
+    <p>Follow us on Instagram, TikTok, and Pinterest @TresJolieChocolate</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
